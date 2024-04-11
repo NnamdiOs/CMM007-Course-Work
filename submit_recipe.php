@@ -1,30 +1,48 @@
 <?php
 session_start();
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
+require 'connection.php';
 
 
-include 'connection.php';
+$categoryMapping = [
+    'appetizers' => 'Appetizer',
+    'main_course' => 'Main Course',
+    'desserts' => 'desserts',
+];
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+   
     $chefName = $_POST['chefName'];
     $recipeName = $_POST['recipeName'];
-    $category = $_POST['category'];
+    $formCategory = $_POST['category'];
     $ingredients = $_POST['ingredients'];
     $directions = $_POST['directions'];
     
-    $target_dir = "uploads/";
-    $target_file = $target_dir . basename($_FILES["recipeImage"]["name"]);
-
-    if (move_uploaded_file($_FILES["recipeImage"]["tmp_name"], $target_file)) {
-        $sql = "INSERT INTO recipes (chefName, recipeName, category, ingredients, directions, imagePath) VALUES (?, ?, ?, ?, ?, ?)";
-        $stmt= $conn->prepare($sql);
-        $stmt->execute([$chefName, $recipeName, $category, $ingredients, $directions, $target_file]);
-        echo "Recipe submitted successfully.";
+    
+    $category = $categoryMapping[strtolower($formCategory)] ?? $formCategory; 
+    
+   
+    if (isset($_FILES['recipeImage']) && $_FILES['recipeImage']['error'] == 0) {
+        $filePath = 'uploads/' . basename($_FILES['recipeImage']['name']);
+        
+        move_uploaded_file($_FILES['recipeImage']['tmp_name'], $filePath);
     } else {
-        echo "Error uploading file.";
+        $filePath = '';
+    }
+
+    
+    $query = "INSERT INTO recipes (chefName, recipeName, category, ingredients, directions, imagePath) VALUES (?, ?, ?, ?, ?, ?)";
+    $stmt = $conn->prepare($query);
+    if ($stmt->execute([$chefName, $recipeName, $category, $ingredients, $directions, $filePath])) {
+        
+        header("Location: Cooks_Dash.php");
+        exit();
+    } else {
+        
+        echo "An error occurred.";
     }
 } else {
-    echo "Invalid request";
+   
+    header("Location: Cooks_Dash.php");
+    exit();
 }
 ?>

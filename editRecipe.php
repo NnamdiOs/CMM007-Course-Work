@@ -1,3 +1,4 @@
+<!--php TO Fetch database info Starts--> 
 <?php
 require 'connection.php'; 
 
@@ -10,7 +11,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['RecipeName'])) {
 
     if ($recipe) {
 ?>
+<!--php Ends--> 
 
+<!--html Starts--> 
 <!DOCTYPE html>
 <html lang="en">
 <head>

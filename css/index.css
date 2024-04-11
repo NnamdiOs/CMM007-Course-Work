@@ -15,7 +15,7 @@ body.homepage{
     line-height: 1.80857;
     font-weight: normal;
     background-image: url("../image/123.png");
-    
+    margin-top: 80px;
 }
 
 body.indexpage{
@@ -38,6 +38,9 @@ body.Uploadpage{
   background-color:#121758;
   
 }
+body.profile{
+  margin-top: 200px;
+}
 
 body.editRecipe, body.deleteRecipe{ 
   background-image: url("../image/Main.png");
@@ -45,10 +48,11 @@ body.editRecipe, body.deleteRecipe{
 }
 body.editRecipe2{ 
   background-image: url("../image/Main.png");
-  background-repeat: no-repeat; /* Prevents repetition */
-  background-size: cover; /* Covers the entire area of the element */
+  background-repeat: no-repeat; 
+  background-size: cover; 
   background-position: center; 
 }
+
 
 
 main{
@@ -107,6 +111,7 @@ main{
 .welcomeNote * {
   position: relative;
   z-index: 2;
+
 }
 
 .welcomeNote {
@@ -114,9 +119,9 @@ main{
   background-position: center;
   color: white;
   text-align: center;
-  padding: 50px 20px;
   position: relative;
   overflow: hidden;
+  
   
 }
 
@@ -124,6 +129,7 @@ main{
   font-size: 2rem; 
   margin-top: 30px;
   color: #ffffff;
+  padding-top: 30px;
 }
 
 .welcomeNote h1 span {
@@ -142,16 +148,16 @@ main{
 
 .best-chef-section {
   padding: 15px;
-  background-color: #f8f9fa; /* Light grey background */
-  border-radius: 10px; /* Rounded corners for the section */
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow */
+  background-color: #f8f9fa; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
 }
 
 .best-chef-header {
   text-align: center;
   font-size: 1.5rem;
-  color: #343a40; /* Dark grey color */
-  border-bottom: 3px dashed #1e4e3f; /* Stylish dashed border */
+  color: #343a40; 
+  border-bottom: 3px dashed #1e4e3f; 
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
@@ -163,36 +169,36 @@ main{
 }
 
 .chef-image {
-  width: 100px; /* Adjust size as needed */
+  width: 100px; 
   height: auto;
-  border-radius: 50%; /* Circular image */
+  border-radius: 50%; 
   margin-right: 20px;
 }
 
 .top-chef-image {
-  width: 30%; /* Make the image responsive by setting its width to 100% of the container */
-  height: auto; /* Maintain the aspect ratio of the image */
-  border-radius: 0.5rem; /* Optional: adds rounded corners to the image */
+  width: 30%; 
+  height: auto; 
+  border-radius: 0.5rem; 
   margin-top: 3rem; 
   float:right
 }
 
 .recipe-details h3 {
   margin-top: 0;
-  color: #51da3c; /* Bootstrap primary color */
+  color: #51da3c;
 }
 
 .recipe-details p {
-  color: #6c757d; /* Bootstrap secondary text color */
+  color: #6c757d; 
   max-width: 400px;
 }
 
 .fun-facts-header {
-  border: 2px solid #2C593C; /* Adjust border color as needed to match or contrast with the navbar */
-  background-color: #2C593C; /* This sets the background color inside the border */
-  color: white; /* Adjust text color as needed, white for contrast here */
-  padding: 10px; /* Adjust padding as needed */
-  border-radius: 5px; /* Optional: adds rounded corners to the border */
+  border: 2px solid #2C593C; 
+  background-color: #2C593C; 
+  color: white; 
+  padding: 10px;
+  border-radius: 5px; 
 }
 
 .filter-sidebar {
@@ -238,9 +244,9 @@ form .shadow {background-color: #111111;
 
 
 .carousel, .carousel-item, .carousel-item img {
-  max-height: 250px; /* Adjust based on your preference */
+  max-height: 250px; 
   width: 100%;
-  object-fit: cover; /* Ensure images cover the area without stretching */
+  object-fit: cover; 
 }
 .carousel-inner{
   background-color: rgba(255, 255, 255, 0.5); 
@@ -248,45 +254,45 @@ form .shadow {background-color: #111111;
 }  
 
 .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
-  display: inline-block; /* Only as wide as the content */
-  padding: 10px; /* Padding around text */
-  border-radius: 10px; /* Rounded corners for caption background */
-  bottom: auto; /* Adjust position as needed */
-  top: 50%; /* Center vertically in the carousel item */
-  transform: translateY(-50%); /* Center vertically in the carousel item */
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: inline-block; 
+  padding: 10px; 
+  border-radius: 10px; 
+  bottom: auto; 
+  top: 50%; 
+  transform: translateY(-50%); 
 }
 
 .carousel-item img {
-  max-height: 150px; /* Adjust based on your preference */
+  max-height: 150px; 
 margin: auto;
 padding-bottom: 10px;
 }
 
   .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: #000; /* Button background color */
-  border-radius: 50%; /* Circular buttons */
-  width: 40px; /* Button width */
-  height: 40px; /* Button height */
+  background-color: #000; 
+  border-radius: 50%; 
+  width: 40px; 
+  height: 40px;
   filter: invert(100%)
 }
 
 .carousel-indicators .active {
-  background-color: #000; /* Active indicator color */
+  background-color: #000; 
 }
 
 .carousel-item h5, .carousel-item p {
-  text-align: center; /* Center align text under images */
-  color:#333; /* Adjust text color as needed */
+  text-align: center; 
+  color:#333; 
   font-size: 0.9rem
 }
 .carousel, .carousel-inner, .carousel-item {
   background: none;
 }
-/* Style for article/video section */
+
 .article-video-section {
-  padding: 20px 0; /* Adjust spacing around the article/video section */
+  padding: 20px 0; 
 }
 
 
@@ -354,6 +360,12 @@ padding-bottom: 10px;
     float: left;
     margin-top: -30px;
 }
+.main-logo {
+  position: absolute;
+  top: 10px; 
+  left: 10px;
+  z-index: 1000;
+}
 
 h1,h2,h3{
   letter-spacing: 0;
@@ -408,7 +420,7 @@ padding: 10px 0;
 }
 
 .nav-link:hover, .navbar-brand:hover {
-  color:#fac031 !important;
+  color:#fac031;
 }
 
 .navbar-brand:hover img {
@@ -433,6 +445,7 @@ padding: 10px 0;
   border-radius:  0.5rem;
   box-shadow: 0 6px 20px rgba(0,0,0,0.1);
   transition: all 0.3s ease;
+  margin-bottom: 20px;
    
 }
 
@@ -467,9 +480,14 @@ padding: 10px 0;
 }
 
 .card-title {
-  font-size: 20px;
+  font-size: 1.1rem;
   font-weight: bold;
   
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #666;
 }
 
 
@@ -492,6 +510,33 @@ padding: 10px 0;
   background-color: darken(#634806, 10%); 
   border-color: darken(#634806, 10%);
 }
+
+#searchSuggestions div.searchSuggestion:hover {
+  background-color: #c8e6c9;
+  padding: 5px 10px;
+  border-bottom: 1px solid #ddd;  
+  cursor: pointer;
+}
+.searchSuggestion:last-child {
+  border-bottom: none; 
+}
+
+.searchSuggestion:hover {
+  background-color: #f0f0f0; 
+}
+
+.search-btn {
+  background-color: gold; 
+ 
+  border: none; 
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #b8860b; 
+}
 .upload-info {
   display: flex;
   justify-content: space-between;
@@ -510,7 +555,9 @@ padding: 10px 0;
     height: 150px;
     border-bottom: 4px solid #2C593C;
   }
-
+  .filter-sidebar, .card-body {
+    padding: 10px;
+}
 }
   .card-bodyin {
     padding: 15px;
@@ -568,35 +615,35 @@ padding: 10px 0;
 
 
 .form-select {
-    margin-right: .5rem; /* Ensure some space between form elements */
+    margin-right: .5rem; 
 }
   
 
 .transparent-navbar {
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent navbar */
+  background: rgba(0, 0, 0, 0.5); 
   backdrop-filter: blur(5px);
 }
 
 .transparent-form {
   background: rgba(255, 255, 255, 0.8);
-  border-radius: 20px; /* Rounded edges for the form */
+  border-radius: 20px; 
   padding: 30px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);  /* Soft shadow for depth */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);  
   margin-top: 50px;
 }
 .form-control {
-  background: rgba(255, 255, 255, 0.8); /* Less transparent input fields */
-  border-radius: 50px; /* Curved edges for input fields */
+  background: rgba(255, 255, 255, 0.8); 
+  border-radius: 50px; 
   border: 2px solid #e7e7e7;
  size-adjust: 23px;
 }
 .transparent-form .form-control {
-  background: #fff; /* Solid white background */
-  border: 2px solid #E0E0E0; /* Light grey border */
-  border-radius: 15px; /* Rounded edges */
-  font-size: 1rem; /* Adjust font size as needed */
-  color: #5A5A5A; /* Slightly darker font color for contrast */
-  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1); /* Subtle inner shadow for depth */
+  background: #fff; 
+  border: 2px solid #E0E0E0; 
+  border-radius: 15px; 
+  font-size: 1rem;
+  color: #5A5A5A;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
  
  
 }
@@ -622,24 +669,23 @@ padding: 10px 0;
 .signup-intro p {
   font-family: 'Raleway', sans-serif;
   font-size: 1.2rem;
-  color: #343a40; /* Bootstrap dark gray */
+  color: #343a40; 
   margin-bottom: 2rem;
   
 }
 .highlight {
   font-family: 'Dosis', sans-serif;
-  color: white; /* Bootstrap success green, adjust as needed */
+  color: white;
   font-weight: 600;
 }
 .footers {
-  background-color: #2C593C !important; /* Dark footer background to match navbar */
-  color: #dddddd;
+  background-color: #2C593C !important;
   
 }
 
 footer a.text-white:hover {
   text-decoration: none;
-  color: #fac031; /* Color when hovering over links */
+  color: #fac031; 
 }
 
 footer .text-uppercase {
@@ -648,19 +694,19 @@ footer .text-uppercase {
 }
 
 footer h5 {
-  color: #fac031; /* Matching the navbar brand color */
+  color: #fac031;
   margin-bottom: 1rem;
   font-size: 1rem;
 }
 
 footer p, footer a {
-  color: #dddddd; /* Light text for readability */
+  color: #dddddd; 
   margin-bottom: 0.25rem;
 }
 
 footer .btn {
   margin-top: .5rem;
-  background-color: #fac031; /* Button color to match Explore button */
+  background-color: #fac031; 
   border: none;
   font-size: 0.8rem;
 }
@@ -675,31 +721,6 @@ footer .btn {
   list-style: none;
 }
 
-.stylish-sidebar {
-  padding: 20px;
-  background-color: #f8f9fa; /* Light background color */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Shadow for depth */
-  text-align: center; /* Center align content */
-  margin-bottom: 20px; /* Space below the sidebar */
-  margin-top: 70px;
-}
-.stylish-sidebar:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease-in-out;
-}
-.stylish-image {
-  width: 80%; /* Full width */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 10px; /* Rounded corners for the image */
-  margin-bottom: 15px; 
- 
-}
-
-.stylish-text {
-  color: #333; /* Dark text color for readability */
-  font-size: 1rem; /* Adjust text size as needed */
-}
 
 .modal-content {
   padding: 20px;
@@ -718,8 +739,8 @@ footer .btn {
 .edit-form-text h1, .edit-form-text h3 {
   padding-top: 30px;
   font-weight: bold;
-  color: #0c3d2b; /* Gold color; adjust as needed */
-  margin: 0 20px 0 0; /* Adjust the right margin to add space between the text and the form */
+  color: #0c3d2b;
+  margin: 0 20px 0 0; 
 }
 
 .edit-form-container {
@@ -734,7 +755,91 @@ form .update{
 }
 
 body.editRecipe2 .container {
-  max-width: 700px; /* Adjust this to fit the desired form width */
-  margin: auto; /* Center the container */
+  max-width: 700px; 
+  margin: auto; 
   
+}
+.chef-profile img {
+  width: 140px; 
+  height: 140px; 
+  border-radius: 50%;
+  object-fit: cover; 
+  border: 4px solid white; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); 
+  position: absolute; 
+  top: -70px;
+  left: 10%;
+  transform: translateX(-50%);
+}
+
+.upload-recipe-form {
+  padding: 20px;
+  background-color: #f8f9fa; 
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.chef-profile {
+  text-align: center; 
+  padding: 20px;
+  background-color: #f8f9fa; 
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); 
+  position: relative;
+  margin-top: 150px; 
+  
+}
+
+.chef-biography {
+  padding-top: 80px; 
+  color: #333; 
+  margin-top: 10px;
+  
+  
+}
+
+.available-recipes-section {
+  margin-top: 100px; 
+}
+.recipe-detail {
+  margin-top: 100px;
+}
+.chef-container {
+    display: flex;
+    justify-content: space-between;
+}
+.chef-profile {
+    flex: 1;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 70px;
+}
+.chef-image{
+    width: 20%;
+    border-radius: 20px;
+}
+.sidebar {
+  width: 250px; 
+  position: fixed;
+  right: 0;
+  top: 10;
+  height: 100vh; 
+  background-color: #97ad9a;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  overflow-y: auto; 
+  margin-top: 20px;
+}
+.sidebar h3 {
+  margin-bottom: 20px;
+  color: #333;
+}
+.chef-profile h2 {
+  margin-top: 100px; 
+  color: #333;/
+}
+
+.chef-profile p {
+  color: #666;
 }

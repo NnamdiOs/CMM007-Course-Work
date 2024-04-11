@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['id'])) {
 
     if ($stmt->rowCount()) {
         echo "Recipe updated successfully.";
-        // Redirect to a confirmation page or the updated recipe
+       
     header("Location: successPage.php");
     } else {
         echo "Error updating recipe.";
